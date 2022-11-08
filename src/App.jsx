@@ -46,7 +46,7 @@ setCart((oldCart)=>{
 
 useEffect(() => {
   async function getData(){
-    const res = await fetch("http://kea-alt-del.dk/t7/api/products");
+    const res = await fetch("https://kea-alt-del.dk/t7/api/products");
     const data = await res.json();
     setProducts(data)
   }
